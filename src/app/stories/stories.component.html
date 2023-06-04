@@ -1,8 +1,20 @@
-<div>
-  <pre><code>{{ slideAtivo | json }}</code></pre>
-</div>
+<div class="container">
+  <div class="barra-progresso-container">
 
-<div>
-  <hr />
-  <pre><code>{{ itens | json }}</code></pre>
+    <div *ngFor="let item of itens; let i = index" (click)="irParaSlide(i)" class="barra-progresso">
+
+      <div class="barra-progresso-porcentual" ] [attr.data-status]="item.status" [style.animation-duration]="intervaloEntreSlidesEmSegundos + 's'
+      "></div>
+
+    </div>
+
+  </div>
+  <div class="imagem" [style.background-image]="'url(' + slideAtivo.urlImagem + ')'">
+    <div [style.color]="slideAtivo.descricaoCorHex">
+      {{ slideAtivo.descricao }}
+    </div>
+  </div>
+
+  <img *ngFor="let item of itens" [src]="item.urlImagem" alt="item.urlImagem"
+    style="width: 1px; height: 1px; opacity: 0;">
 </div>

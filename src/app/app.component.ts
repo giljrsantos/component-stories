@@ -11,21 +11,39 @@ export class AppComponent {
   itens: StoriesItem[] = [
     {
       descricao: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, modi!',
-      descricaoCorHex:'#fff',
+      descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
-      urlImagem: 'https://wallpapers.com/images/hd/splashing-water-gradient-background-mobile-v5hlk4ta55rn5w3x.jpg'
+      urlImagem: 'https://wallpapers.com/images/high/cow-in-a-farm-field-hgptv6kev7hif15w.webp'
     },
     {
       descricao: 'Incidunt, modi!',
-      descricaoCorHex:'#fff',
+      descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
-      urlImagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQjw1nyTi1qvWVyCufBIEuFx8B6Zn9TOLVw&usqp=CAU'
+      urlImagem: 'https://wallpapers.com/images/high/mother-cow-and-little-calf-sugncarjrap57hte.webp'
     },
     {
       descricao: 'Lorem ipsum dolor sit amet.',
-      descricaoCorHex:'#fff',
+      descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
-      urlImagem: 'https://marketplace.canva.com/EAFJd1mhO-c/1/0/900w/canva-colorful-watercolor-painting-phone-wallpaper-qq02VzvX2Nc.jpg'
+      urlImagem: 'https://wallpapers.com/images/high/farm-animals-focusing-a-baby-cow-bi3jtoxivcqb6iuh.webp'
+    },
+    {
+      descricao: 'Lorem ipsum dolor sit amet.',
+      descricaoCorHex: '#fff',
+      status: StoriesItemStatus.aguardando,
+      urlImagem: 'https://wallpapers.com/images/high/alone-iconic-cattle-of-scotland-dlml1l12x3rbn6gm.webp'
+    },
+    {
+      descricao: 'Lorem ipsum dolor sit amet.',
+      descricaoCorHex: '#fff',
+      status: StoriesItemStatus.aguardando,
+      urlImagem: 'https://wallpapers.com/images/high/hairy-cow-nose-zajsdj5us69ajme2.webp'
+    },
+    {
+      descricao: 'Lorem ipsum dolor sit amet.',
+      descricaoCorHex: '#fff',
+      status: StoriesItemStatus.aguardando,
+      urlImagem: 'https://wallpapers.com/images/high/black-cow-with-yellow-tag-rw6959bemk53ztg4.webp'
     }
   ]
   title = 'projeto-stories';

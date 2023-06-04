@@ -1,0 +1,97 @@
+/* ***************************************************** */
+/* VARIÁVEIS UTILIZADAS AO LONGO DAS CLASSES             */
+/* ***************************************************** */
+::ng-deep :root {
+    --altura-imagem: 80vh;
+    --barra-progress-gap: 16px;
+    --container-background: radial-gradient(#666, #000);
+    --descricao-font: 32px Georgia;
+    --largura-imagem: 60vw;
+    --largura-maxima-imagem: 480px;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: var(--container-background);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* ****************** */
+/* IMAGEM E TEXTO     */
+/* ****************** */
+
+.container .imagem {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #eee;
+    display: flex;
+    height: var(--altura-imagem);
+    margin: 0 auto;
+    max-width: var(--largura-maxima-imagem);
+    transition: all 0.5s ease-in-out;
+    width: var(--largura-imagem);
+}
+
+.container .imagem div {
+    background: rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    font: var(--descricao-font);
+    padding: 12px;
+    text-align: center;
+}
+
+/* ****************** */
+/* BARRA DE PROGRESSO */
+/* ****************** */
+.barra-progresso-container {
+    display: flex;
+    gap: var(--barra-progress-gap);
+    margin: 12px auto;
+    max-width: var(--largura-maxima-imagem);
+    width: var(--largura-imagem);
+}
+
+.barra-progresso,
+.barra-progresso-percentual {
+    border-radius: 8px;
+    flex-grow: 1;
+    height: 4px;
+}
+
+.barra-progresso {
+    background: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.barra-progresso-percentual {
+    background: #aaa;
+    width: 0;
+}
+
+.barra-progresso-percentual[data-status='ativo'] {
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation: animacao-progresso;
+}
+
+.barra-progresso-percentual[data-status='finalizado'] {
+    width: 100%;
+}
+
+@keyframes animacao-progresso {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

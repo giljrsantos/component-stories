@@ -16,8 +16,7 @@ import { Subscription, timer } from 'rxjs';
   styleUrls: ['./stories.component.css'],
 })
 export class StoriesComponent
-  implements OnChanges, OnDestroy
-{
+  implements OnChanges, OnDestroy {
   private controleIntervalo!: Subscription;
 
   @Input()
@@ -71,6 +70,10 @@ export class StoriesComponent
 
   avancarSlide(): void {
     this.irParaSlide(this.slideAtivoIndex + 1);
+  }
+
+  retrocederSlide(): void {
+    this.irParaSlide(this.slideAtivoIndex - 1);
   }
 
   pararTimer(): void {
