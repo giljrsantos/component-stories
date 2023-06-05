@@ -1,5 +1,6 @@
 import {
   Component,
+  HostListener,
   Input,
   OnChanges,
   OnDestroy,
@@ -17,6 +18,7 @@ import { Subscription, timer } from 'rxjs';
 })
 export class StoriesComponent
   implements OnChanges, OnDestroy {
+
   private controleIntervalo!: Subscription;
 
   @Input()
@@ -68,10 +70,12 @@ export class StoriesComponent
     });
   }
 
+  @HostListener('document:keydown.ArrowRight')
   avancarSlide(): void {
     this.irParaSlide(this.slideAtivoIndex + 1);
   }
 
+  @HostListener('document:keydown.ArrowLeft')
   retrocederSlide(): void {
     this.irParaSlide(this.slideAtivoIndex - 1);
   }
@@ -100,5 +104,9 @@ export class StoriesComponent
     }
 
     this.iniciarTimer();
+
+
   }
+
+
 }
