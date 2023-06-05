@@ -3,7 +3,7 @@
 
     <div *ngFor="let item of itens; let i = index" (click)="irParaSlide(i)" class="barra-progresso">
 
-      <div class="barra-progresso-porcentual" ] [attr.data-status]="item.status" [style.animation-duration]="intervaloEntreSlidesEmSegundos + 's'
+      <div class="barra-progresso-porcentual" [attr.data-status]="item.status" [style.animation-duration]="intervaloEntreSlidesEmSegundos + 's'
       "></div>
 
     </div>
