@@ -3,13 +3,16 @@
 
     <div *ngFor="let item of itens; let i = index" (click)="irParaSlide(i)" class="barra-progresso">
 
-      <div class="barra-progresso-porcentual" [attr.data-status]="item.status" [style.animation-duration]="intervaloEntreSlidesEmSegundos + 's'
+      <div class="barra-progresso-percentual" [attr.data-status]="item.status" [style.animation-duration]="intervaloEntreSlidesEmSegundos + 's'
       "></div>
 
     </div>
 
   </div>
-  <div class="imagem" [style.background-image]="'url(' + slideAtivo.urlImagem + ')'">
+
+  <div class="imagem" [style.background-image]="
+  'url(' + slideAtivo.urlImagem + ')'
+  ">
     <div [style.color]="slideAtivo.descricaoCorHex">
       {{ slideAtivo.descricao }}
     </div>
