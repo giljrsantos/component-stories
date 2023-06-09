@@ -17,8 +17,8 @@ import { Subscription, timer } from 'rxjs';
   styleUrls: ['./stories.component.css'],
 })
 export class StoriesComponent
-  implements OnChanges, OnDestroy {
-
+  implements OnChanges, OnDestroy
+{
   private controleIntervalo!: Subscription;
 
   @Input()
@@ -104,9 +104,5 @@ export class StoriesComponent
     }
 
     this.iniciarTimer();
-
-
   }
-
-
 }
