@@ -10,40 +10,46 @@ import { Component } from '@angular/core';
 export class AppComponent {
   itens: StoriesItem[] = [
     {
-      descricao: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, modi!',
+      descricao: 'GELBVIEH',
       descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
       urlImagem: 'https://wallpapers.com/images/high/cow-in-a-farm-field-hgptv6kev7hif15w.webp'
     },
     {
-      descricao: 'Incidunt, modi!',
+      descricao: 'GALLOWAY COM CINTO',
       descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
-      urlImagem: 'https://wallpapers.com/images/high/mother-cow-and-little-calf-sugncarjrap57hte.webp'
+      urlImagem: 'http://capitaltimes.com.br/wp-content/uploads/2021/11/Belted-Galloway-Champion-9834.webp'
     },
     {
-      descricao: 'Lorem ipsum dolor sit amet.',
+      descricao: 'RED ANGUS',
       descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
-      urlImagem: 'https://wallpapers.com/images/high/farm-animals-focusing-a-baby-cow-bi3jtoxivcqb6iuh.webp'
+      urlImagem: 'http://capitaltimes.com.br/wp-content/uploads/2021/11/RED-ANGUS.webp'
     },
     {
-      descricao: 'Lorem ipsum dolor sit amet.',
+      descricao: 'SCOTTISH HIGHLAND',
       descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
       urlImagem: 'https://wallpapers.com/images/high/alone-iconic-cattle-of-scotland-dlml1l12x3rbn6gm.webp'
     },
     {
-      descricao: 'Lorem ipsum dolor sit amet.',
+      descricao: 'SIMENTAL',
       descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
-      urlImagem: 'https://wallpapers.com/images/high/hairy-cow-nose-zajsdj5us69ajme2.webp'
+      urlImagem: 'https://capitaltimes.com.br/wp-content/uploads/2021/11/SIMENTAL.webp'
     },
     {
-      descricao: 'Lorem ipsum dolor sit amet.',
+      descricao: 'HOLSTEIN',
       descricaoCorHex: '#fff',
       status: StoriesItemStatus.aguardando,
       urlImagem: 'https://wallpapers.com/images/high/black-cow-with-yellow-tag-rw6959bemk53ztg4.webp'
+    },
+    {
+      descricao: 'TEXAS LONGHORN',
+      descricaoCorHex: '#fff',
+      status: StoriesItemStatus.aguardando,
+      urlImagem: 'https://capitaltimes.com.br/wp-content/uploads/2021/11/TEXAS-LONGHORN.webp'
     }
   ]
   title = 'projeto-stories';
